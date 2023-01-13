@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iMartinDav.github.io/iMartinDav.github.io",
+  "homepage": "https://github.com/iMartinDav/Portafolio",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -24,7 +24,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build && cp CNAME build && echo 'imartindav.me' > ./build/CNAME",
+    "predeploy": "npm run build && cp CNAME build && echo imartindav.me > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
