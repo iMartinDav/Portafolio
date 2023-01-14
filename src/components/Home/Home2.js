@@ -5,9 +5,9 @@ import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillLinkedin,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { SiCodeship } from "react-icons/si";
 
 function Home2() {
   return (
@@ -21,7 +21,7 @@ function Home2() {
             <p className="home-about-body">
             I am building the future by designating and modifying the code of life.👨🏻‍💻🧫
               <br />
-              <br />I am a full star developer including
+              <br />I am a Full Stack Developer including
               <i>
                 <b className="purple"> RoR, JavaScript and Python as well as Kotlin and Swift. </b>
               </i>
@@ -91,17 +91,17 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <AiFillLinkedin />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://opensea.io/iMartinDav"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <SiCodeship />
                 </a>
               </li>
             </ul>

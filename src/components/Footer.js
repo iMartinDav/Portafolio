@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiCodeship } from "react-icons/si";
 
 function Footer() {
   let date = new Date();
@@ -53,12 +53,12 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/"
+                href="https://opensea.io/iMartinDav"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <SiCodeship />
               </a>
             </li>
           </ul>

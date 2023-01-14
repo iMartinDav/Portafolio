@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { TbPokeball } from "react-icons/tb";
+import { GiCroissant,
+        GiSpaceship } from "react-icons/gi";
 
 function AboutCard() {
   return (
@@ -17,13 +19,13 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Pokemon Games
+              <TbPokeball /> Playing Pokemon Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Know Cultures through their Food
+              <GiCroissant /> Know Cultures through their Food
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <GiSpaceship /> Travelling
             </li>
           </ul>
 
