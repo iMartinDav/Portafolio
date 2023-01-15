@@ -20,14 +20,14 @@
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/iMartinDav/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/iMartinDav/Portafolio/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/iMartinDav/Portfolio/issues">Request Feature</a>
+    <a href="https://github.com/iMartinDav/Portafolio/issues">Request Feature</a>
 </h3>
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [iMartinDav](https://github.com/iMartinDav/Portfolio). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [iMartinDav](https://github.com/iMartinDav/Portafolio). Thanks!
 
 ## Built With
 
