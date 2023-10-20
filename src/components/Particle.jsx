@@ -1,19 +1,19 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-function Particle() {
+const Particle = () => {
   const particlesParams = {
     particles: {
       number: {
         value: 160,
         density: {
           enable: true,
-          value_area: 1500,
+          value_area: 1800,
         },
       },
-      line_linked: {
+      links: {
         enable: false,
-        opacity: 0.03,
+        opacity: 0.04,
       },
       move: {
         direction: "right",
@@ -31,8 +31,9 @@ function Particle() {
       },
     },
     interactivity: {
+      detectsOn: "window",
       events: {
-        onclick: {
+        onClick: {
           enable: true,
           mode: "push",
         },
@@ -46,7 +47,7 @@ function Particle() {
     retina_detect: true,
   };
 
-  return <Particles id="tsparticles" params={particlesParams} />;
-}
+  return <Particles id="tsparticles" options={particlesParams} />;
+};
 
 export default Particle;
