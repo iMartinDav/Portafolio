@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "allowImportingTsExtensions": true,
+      "noEmit": true,
+      "jsx": "react",
+      "esModuleInterop": true,// If you want to generate declaration files but no JavaScript output
+    }
+  }
