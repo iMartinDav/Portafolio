@@ -4,10 +4,10 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillLinkedin,
 } from "react-icons/ai";
 import { SiCodeship } from "react-icons/si";
+import { RiTwitterXLine } from 'react-icons/ri'; // Import RiTwitterXLine
 
 function Home2() {
   return (
@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I am building the future by designating and modifying the code of life.👨🏻‍💻🧫
+              I am building the future by designating and modifying the code of life.👨🏻‍💻🧫
               <br />
               <br />I am a Full Stack Developer including
               <i>
@@ -27,12 +27,12 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interests is building new &nbsp;
               <i>
                 <b className="purple"> Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                  Deep Learning and Natural Language Processing.
                 </b>
               </i>
               <br />
@@ -64,6 +64,17 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
+              {/* Replace AiOutlineTwitter with RiTwitterXLine */}
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/iMartinDav"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <RiTwitterXLine />
+                </a>
+              </li>
               <li className="social-icons">
                 <a
                   href="https://github.com/iMartinDav"
@@ -72,16 +83,6 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/iMartinDav"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -111,4 +112,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

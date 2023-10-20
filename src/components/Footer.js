@@ -1,11 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiCodeship } from "react-icons/si";
+import { RiTwitterXLine } from 'react-icons/ri'; // Import RiTwitterXLine
 
 function Footer() {
   let date = new Date();
@@ -17,10 +15,11 @@ function Footer() {
           <h3>Built From Scratch With 💚 by Martin DAVILA</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} All Rights Reserved to GPT-3</h3>
+          <h3>Copyright © {year} All Rights Reserved to GPT-4</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
+            {/* Replace AiOutlineTwitter with RiTwitterXLine */}
             <li className="social-icons">
               <a
                 href="https://github.com/iMartinDav"
@@ -38,14 +37,14 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <RiTwitterXLine />
               </a>
             </li>
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/imartindav/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
