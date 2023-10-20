@@ -7,7 +7,13 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
-function About() {
+// Define the types for props
+interface AboutProps {
+  laptopImg: string;
+}
+
+// Create a functional component for the About section
+const About: React.FC<AboutProps> = ({ laptopImg }) => {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -49,6 +55,6 @@ function About() {
       </Container>
     </Container>
   );
-}
+};
 
 export default About;
