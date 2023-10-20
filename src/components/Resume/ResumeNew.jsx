@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react"; // Removed 'useEffect'
+import { Container, Row } from "react-bootstrap"; // Removed 'Col'
 import Button from "react-bootstrap/Button";
-import { AiOutlineDownload } from "react-icons/ai";
+import { AiOutlineDownload, AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import { View, StyleSheet } from "@react-pdf/renderer";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -45,7 +45,9 @@ function PDFViewer() {
   };
 
   const handlePageChange = (newPage) => {
-    setPageNumber(newPage);
+    if (newPage >= 1 && newPage <= numPages) {
+      setPageNumber(newPage);
+    }
   };
 
   return (
@@ -61,7 +63,7 @@ function PDFViewer() {
           justifyContent: "center",
           alignItems: "center",
           height: "calc(100% - 50px)",
-          bottom: 0, // Set height to match PDF height
+          bottom: 0,
         }}
       >
         <div
@@ -79,8 +81,9 @@ function PDFViewer() {
               renderAnnotationLayer={false}
               renderTextLayer={false}
               width={1000}
-              height={"15in"} // Set height
+              height={"15in"}
               style={styles.page}
+              dpi={150}
             >
               <View style={styles.section}></View>
             </Page>
@@ -89,20 +92,28 @@ function PDFViewer() {
       </Row>
 
       <Row style={{ justifyContent: "center", position: "relative" }}>
-        <Button
-          variant="primary"
-          onClick={() => handlePageChange(pageNumber - 1)}
-          disabled={pageNumber === 1}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="primary"
-          onClick={() => handlePageChange(pageNumber + 1)}
-          disabled={pageNumber === numPages}
-        >
-          Next
-        </Button>
+        <p>Page {pageNumber} of {numPages}</p>
+      </Row>
+
+      <Row style={{ justifyContent: "center", position: "relative" }}>
+        <div className="pagination-buttons">
+          <Button
+            variant="primary"
+            onClick={() => handlePageChange(pageNumber - 1)}
+            disabled={pageNumber === 1}
+            style={{ borderRadius: "50%", padding: "0.5rem", marginRight: "1rem" }}
+          >
+            <AiOutlineArrowLeft />
+          </Button>
+          <Button
+            variant="primary"
+            onClick={() => handlePageChange(pageNumber + 1)}
+            disabled={pageNumber === numPages}
+            style={{ borderRadius: "50%", padding: "0.5rem" }}
+          >
+            <AiOutlineArrowRight />
+          </Button>
+        </div>
       </Row>
     </Container>
   );
