@@ -3,11 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiCodeship } from "react-icons/si";
-import { RiTwitterXLine } from 'react-icons/ri'; // Import RiTwitterXLine
+import { RiTwitterXLine } from 'react-icons/ri';
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -19,7 +20,6 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            {/* Replace AiOutlineTwitter with RiTwitterXLine */}
             <li className="social-icons">
               <a
                 href="https://github.com/iMartinDav"

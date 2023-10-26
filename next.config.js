@@ -1,6 +1,4 @@
 module.exports = {
-  // You can customize your Next.js configuration here
-
   // Define custom routes to match your existing structure
   async rewrites() {
     return [
@@ -19,5 +17,11 @@ module.exports = {
 
       // Add more routes as needed
     ];
+  },
+
+  webpack(config) {
+    // Add .ts and .tsx as valid resolvable extensions
+    config.resolve.extensions.push('.ts', '.tsx');
+    return config;
   },
 };

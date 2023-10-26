@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const DownloadButton = () => (
+const DownloadButton: React.FC = () => (
   <Button
     variant="primary"
     href={RESUME_LINK}
@@ -74,16 +74,12 @@ function PDFViewer() {
             height: "100%",
           }}
         >
-          <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess} removeText={true}>
+          <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess} >
             <Page
-              size="A4"
               pageNumber={pageNumber}
               renderAnnotationLayer={false}
               renderTextLayer={false}
               width={1000}
-              height={"15in"}
-              style={styles.page}
-              dpi={150}
             >
               <View style={styles.section}></View>
             </Page>
