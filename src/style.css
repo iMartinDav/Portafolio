@@ -37,11 +37,6 @@ button:focus {
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
-  animation: fill 0.5s ease forwards 4s;
-}
-
-#preloader-none {
-  opacity: 0;
 }
 
 #no-scroll {
