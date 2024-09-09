@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.6f777795.css",
-    "main.js": "/static/js/main.6299781d.js",
-    "static/js/488.9e51c7c4.chunk.js": "/static/js/488.9e51c7c4.chunk.js",
+    "main.js": "/static/js/main.c59e7c8f.js",
+    "static/js/395.7a7e3936.chunk.js": "/static/js/395.7a7e3936.chunk.js",
     "static/media/logo.png": "/static/media/logo.e9b609cbcef822306064.png",
     "static/media/home-bg.jpg": "/static/media/home-bg.4507ce5625183dbc6a75.jpg",
     "static/media/Software_Engineer_Martin_DAVILA.pdf": "/static/media/Software_Engineer_Martin_DAVILA.56ccc4c8f57e1bcc10b7.pdf",
     "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/chroma.cjs": "/static/media/chroma.271634d07525ddfb33b4.cjs",
     "static/media/avatar.svg": "/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
     "static/media/pre.svg": "/static/media/pre.367328c629ce88bd111f.svg",
     "index.html": "/index.html",
     "main.6f777795.css.map": "/static/css/main.6f777795.css.map",
-    "main.6299781d.js.map": "/static/js/main.6299781d.js.map",
-    "488.9e51c7c4.chunk.js.map": "/static/js/488.9e51c7c4.chunk.js.map"
+    "main.c59e7c8f.js.map": "/static/js/main.c59e7c8f.js.map",
+    "395.7a7e3936.chunk.js.map": "/static/js/395.7a7e3936.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f777795.css",
-    "static/js/main.6299781d.js"
+    "static/js/main.c59e7c8f.js"
   ]
 }
