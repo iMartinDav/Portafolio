@@ -1,15 +1,11 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.582),
+      rgba(12, 8, 24, 0.904));
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
+  --image-gradient: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863));
 
   --imp-text-color: #c770f0;
 }
@@ -56,73 +52,85 @@ button:focus {
   animation: line-anim 2s ease forwards;
 }
 
-#preloader path:nth-child(1){
+#preloader path:nth-child(1) {
   stroke-dasharray: 320px;
   stroke-dashoffset: 320px;
   animation: line-anim 2s ease forwards 0.3s;
 }
-#preloader path:nth-child(2){
+
+#preloader path:nth-child(2) {
   stroke-dasharray: 1070px;
   stroke-dashoffset: 1070px;
   animation: line-anim 2s ease-in forwards 0.6s;
 }
-#preloader path:nth-child(3){
+
+#preloader path:nth-child(3) {
   stroke-dasharray: 495px;
   stroke-dashoffset: 494px;
   animation: line-anim 2s ease forwards 0.9s;
 }
-#preloader path:nth-child(4){
+
+#preloader path:nth-child(4) {
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
   animation: line-anim 2s ease forwards 1.2s;
 }
-#preloader path:nth-child(5){
+
+#preloader path:nth-child(5) {
   stroke-dasharray: 635px;
   stroke-dashoffset: 635px;
   animation: line-anim 2s ease forwards 1.5s;
 }
-#preloader path:nth-child(6){
+
+#preloader path:nth-child(6) {
   stroke-dasharray: 604px;
   stroke-dashoffset: 604px;
   animation: line-anim 2s ease forwards 1.8s;
 }
-#preloader path:nth-child(7){
+
+#preloader path:nth-child(7) {
   stroke-dasharray: 463px;
   stroke-dashoffset: 463px;
   animation: line-anim 2s ease forwards 2.1s;
 }
-#preloader path:nth-child(8){
+
+#preloader path:nth-child(8) {
   stroke-dasharray: 550px;
   stroke-dashoffset: 550px;
   animation: line-anim 2s ease forwards 2.4s;
 }
-#preloader path:nth-child(9){
+
+#preloader path:nth-child(9) {
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
   animation: line-anim 2s ease forwards 2.7s;
 }
-#preloader path:nth-child(10){
+
+#preloader path:nth-child(10) {
   stroke-dasharray: 700px;
   stroke-dashoffset: 700px;
   animation: line-anim 2s ease forwards 3s;
 }
-#preloader path:nth-child(11){
+
+#preloader path:nth-child(11) {
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
   animation: line-anim 2s ease forwards 3.3s;
 }
 
-@keyframes line-anim{
+@keyframes line-anim {
   to {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
-@keyframes fill{
+
+@keyframes fill {
   from {
-      fill: transparent;
+    fill: transparent;
   }
-  to{
-      fill: #066961;
+
+  to {
+    fill: #066961;
   }
 }
 
@@ -225,10 +233,12 @@ button:focus {
     font-size: 1.4rem !important;
     background-color: #066961 !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -288,10 +298,14 @@ button:focus {
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 6.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 6.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -299,28 +313,38 @@ button:focus {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -368,6 +392,7 @@ button:focus {
   color: #019c92 !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #006C65 !important;
@@ -379,6 +404,7 @@ button:focus {
     font-weight: 500 !important;
     position: absolute !important;
   }
+
   .Typewriter__cursor {
     display: none !important;
   }
@@ -484,8 +510,9 @@ button:focus {
   background-color: #002624;
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -511,6 +538,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -520,6 +548,7 @@ button:focus {
 .blockquote-footer {
   color: #a588c0 !important;
 }
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -546,6 +575,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -606,10 +636,12 @@ button:focus {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
@@ -627,6 +659,70 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+}
+
+.animated-border {
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  left: 0;
+  height: 100%;
+  background: conic-gradient(transparent 50deg,
+      #ff4874 80deg,
+      transparent 100deg);
+  filter: blur(8px);
+  border-radius: 16px;
+  transform-origin: center;
+  animation: border-animation -0.64s linear 4s infinite;
+  will-change: transform;
+}
+
+.wrapper {
+  margin-top: 32px;
+  padding: 4px;
+  position: relative;
+  margin-top: 128px;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(22, 4, 8, 0.5), rgba(22, 4, 8, 0.5)),
+    linear-gradient(100.41deg, #ff5b37 0.52%, #ab0052 100.52%);
+  border-radius: 16px;
+  box-shadow: 0 0 27px rgba(82, 21, 110, 0.637);
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(22, 4, 8, 0.96), rgba(22, 4, 8, 0.96)),
+    linear-gradient(100.41deg, #ff5b37 0.52%, #ab0052 100.52%);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  height: 139px;
+}
+
+@keyframes border-animation {
+  0% {
+    transform: translateY(-25%) translateX(40%) rotate(0deg);
+  }
+
+  30% {
+    transform: translateY(0) translateX(0) rotate(90deg) scaleX(0.7);
+  }
+
+  50% {
+    transform: translateY(-25%) translateX(-40%) rotate(180deg);
+  }
+
+  70% {
+    transform: translateY(0) translateX(0) rotate(270deg) scaleX(0.7);
+  }
+
+  to {
+    transform: translateY(-25%) translateX(40%) rotate(1turn);
+  }
 }
 
 .tech-icons {
@@ -655,6 +751,7 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -677,6 +774,7 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -714,6 +812,7 @@ button:focus {
     padding-left: 15px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -790,10 +889,12 @@ button:focus {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -817,6 +918,7 @@ button:focus {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }

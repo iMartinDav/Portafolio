@@ -60,36 +60,39 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => setExpand(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome className="mb-1" /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} to="/about" onClick={() => setExpand(false)}>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link as={Link} to="/project" onClick={() => setExpand(false)}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link as={Link} to="/resume" onClick={() => setExpand(false)}>
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineUser className="mb-1" /> About
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                href="https://platzi.com/p/MartinDavila/"
+                as={Link}
+                to="/project"
+                onClick={() => setExpand(false)}
+              >
+                <AiOutlineFundProjectionScreen className="mb-1" /> Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/resume" onClick={() => setExpand(false)}>
+                <CgFileDocument className="mb-1" /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                href="https://platzi.com/p/iMartinDav/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog className="mb-1" /> Blogs
               </Nav.Link>
             </Nav.Item>
 
@@ -99,8 +102,8 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork className="text-lg" />{" "}
+                <AiFillStar className="text-lg" />
               </Button>
             </Nav.Item>
           </Nav>
